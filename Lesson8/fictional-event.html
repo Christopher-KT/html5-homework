@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fictional Event</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background-color: #f8f9fa; padding: 20px; text-align: center; }
+        nav { background-color: #343a40; padding: 10px 0; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .content { margin: 20px 10%; }
+        button:hover { background-color: #007bff; color: white; }
+        .highlight:hover { font-size: 18px; }
+        iframe {
+            border: 1px solid black;
+            width: 30%; /* takes precedence over the width set with the HTML width attribute */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Fictional Event</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <section id="home">
+            <h2>About the Event</h2>
+            <p>Join us for a day of learning and fun! This event will cover a range of topics and activities.</p>
+            <video controls>
+                <source src="intro.mp4" type="video/mp4" alt="Your browser does not support the video tag.">
+            </video>
+        </section>
+        <section id="register">
+            <h2>Register Now</h2>
+            <form id="registration-form">
+                <input id="name" type="text" placeholder="Name" required>
+                <input id="email" type="email" placeholder="Email" required>
+                <button type="register" onclick="displayMessage()">Register</button>
+            </form>
+        </section>
+        <br><br>
+
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6175398570613!2d-73.98566439999999!3d40.7484405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1723761368322!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>Copyright © 2024</p>
+        <script>
+            function displayMessage() {
+                if (name !=null && email !=null) {
+                alert('Thank you for joining our event!');
+            }}
+        </script>
+    </footer>
+</body>
+</html>

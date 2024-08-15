@@ -54,7 +54,7 @@ a:hover {
 #cake {
     width: 150px;
     height: 150px;
-    background-image: url(portal-cake2-modified.png);
+    background-image: URL(//wsl.localhost/Ubuntu-22.04/home/chriskt/html5-homework/Media/portal-cake2-modified.png);
     background-size: cover; 
     background-position: center; 
     background-color: #30a954;
@@ -91,3 +91,62 @@ a:hover {
     width: 50%;
     margin: 0 auto;
 }
+
+/* HW 10*/
+.carousel-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    background-color: white;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+/* End HW 10 */

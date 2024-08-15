@@ -5,17 +5,6 @@
     <!-- HW 7 -->
     <link rel="stylesheet" href="css/HTML5.css">
     <title>Home Page</title>
-    <script>
-        document.getElementById('submitBtn').disabled = true;
-
-        function displayMessage() {
-            alert('The Cake is a Lie!');
-        }
-
-        function changeColor(element, color) {
-            element.style.backgroundColor = color;
-        }
-     </script>
 </head>
 
 <!-- My brain today... https://open.spotify.com/track/1ezFFRt6hTegKiqm5c8NGu?si=917e7402ec214e22 -->
@@ -142,9 +131,41 @@
         <button id="button-change" class="buttons" onmouseover="changeColor(this, 'pink')" onmouseout="changeColor(this, 'rgb(245, 217, 9)')">Hover over Me!
         </button>
     </section>
+    <br><br>
+
+    <!-- HW 10 -->
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="carousel-item">
+                <img src="Media/otter.png" alt="Cool Otter Smoking with Flight Jacket On">
+            </div>
+            <div class="carousel-item">
+                <img src="Media/steam-dragon.png" alt="Steampunk Dragon Flying in Black and White">
+            </div>
+            <div class="carousel-item">
+                <img src="Media/cthulu-fight.png" alt="Fighter Jets Attacking Cthulu">
+            </div>
+            <div class="carousel-item">
+                <img src="Media/red-panda.png" alt="Cute Red Panda Drinking Boba Tea">
+            </div>
+            <div class="carousel-item">
+                <img src="Media/whales.png" alt="Whales Swimming Through Space">
+            </div>
+            <div class="carousel-item">
+                <img src="Media/cthulu-dude.png" alt="Chtulu as The Dude">
+            </div>
+            <div class="carousel-item">
+                <img src="Media/spaceship.png" alt="Spaceship Flying Through Space">
+            </div>
+        </div>
+        <button class="carousel-button prev">&#10094;</button>
+        <button class="carousel-button next">&#10095;</button>
+    </div>
 
     <footer>
         <p>Copyright 2024, AKA This is my page, you can't have it</p>
+        <script src="js/HTML5.js">
+        </script>
     </footer>
 </body>
 </html>
