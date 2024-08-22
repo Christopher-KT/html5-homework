@@ -1,3 +1,7 @@
+function openInNewTab() {
+    window.open("https://bg.battletech.com", "_blank").focus();
+  }
+
 document.getElementById('submitBtn').disabled = true;
 
     function displayMessage() {

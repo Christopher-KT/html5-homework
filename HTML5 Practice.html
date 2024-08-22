@@ -10,20 +10,21 @@
 <!-- My brain today... https://open.spotify.com/track/1ezFFRt6hTegKiqm5c8NGu?si=917e7402ec214e22 -->
 
 <body>
-    <header id="home">
-     <h1>Hello!</h1>
-    </header>
     <nav>
-        <ul>
-         <li><a href="#home">Home</a></li>
-         <li><a href="#about">About</a></li>
-         <li><a href="#contact">Contact</a></li>
-         <li><a href="https://bg.battletech.com/">Classic Battletech</a></li>
-         <li><a href="#videos">Video</a></li>
-         <li><a href="#songs">Song</a></li>
-         <li><a href="#Interactive Elements">Buttons!</a></li>
-        </ul>
+        <div class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#videos">Video</a></li>
+            <li><a href="#songs">Song</a></li>
+            <li><a href="#Interactive Elements">Buttons!</a></li>
+            <li><a href onclick="openInNewTab()">Go to Classic Battletech</a></li>
+        </div>
     </nav>
+
+    <header id="home">
+        <h1>Hello!</h1>
+    </header>
 
     <section id="about">
      <h2>About</h2>
@@ -118,7 +119,7 @@
         <button id="cake" class="buttons" onclick="displayMessage()">Click for Cake</button>
         <br><br>
 
-        <div id="helicopter" onmouseover="changeColor(this, 'purple')" onmouseout="changeColor(this, 'rgb(0, 255, 195)')">Hover over me!
+        <div id="helicopter" class="forms" onmouseover="changeColor(this, 'purple')" onmouseout="changeColor(this, 'rgb(0, 255, 195)')">Hover over me!
         </div>
         <br>
 
@@ -130,6 +131,21 @@
 
         <button id="button-change" class="buttons" onmouseover="changeColor(this, 'pink')" onmouseout="changeColor(this, 'rgb(245, 217, 9)')">Hover over Me!
         </button>
+    </section>
+    <br><br>
+
+    <section id="workplace"></section>
+        <p>Click on the computer, the phone, or the cup of coffee to see what you clicked on:</p>
+
+        <div class="map">
+            <img src="Media\workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" onclick="alert('That is a computer!')">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" onclick="alert('That is a phone!')">
+                <area shape="circle" coords="337,300,44" alt="Cup of coffee" onclick="alert('That is coffee!')">
+            </map>
+        </div>
     </section>
     <br><br>
 

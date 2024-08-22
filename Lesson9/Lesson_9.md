@@ -6,7 +6,7 @@ An image map allows you to associate clickable areas on an image with different 
 ### HTML5 Image Map Basics
 - **`<map>`**: This element is used to define a clickable area on an image.
 - **`<area>`**: Specifies the shape, coordinates, and hyperlink target for each clickable area.
-- **Shapes**: The areas within a map can be rectangles (`rect`), circles (`circle`), or polygons (`poly`).
+- **`<shape>`**: The areas within a map can be rectangles (`rect`), circles (`circle`), or polygons (`poly`).
 
 ### Example Usage
 Let's create an image map for a website that has different sections represented by various parts of an image. Suppose we have an image with four quadrants, each representing a different page: Home, About Us, Services, and Contact.
