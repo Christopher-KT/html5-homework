@@ -10,7 +10,7 @@
 #cake {
     width: 150px;
     height: 150px;
-    background-image: URL(//wsl.localhost/Ubuntu-22.04/home/chriskt/html5-homework/Media/portal-cake2-modified.png);
+    background-image: URL(../Media/portal-cake2-modified.png);
     background-size: cover; 
     background-position: center; 
     background-color: #30a954;
